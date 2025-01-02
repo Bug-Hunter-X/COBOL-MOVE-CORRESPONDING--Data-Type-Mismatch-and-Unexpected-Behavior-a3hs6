@@ -1,0 +1,3 @@
+MOVE CORRESPONDING WS-INPUT-RECORD TO WS-OUTPUT-RECORD.
+
+* The above statement might cause unexpected behavior if the structure of WS-INPUT-RECORD and WS-OUTPUT-RECORD are not identical. If the data types of corresponding fields differ, truncation or data corruption might occur. For instance, moving a numeric value from a field in WS-INPUT-RECORD to a alphanumeric field in WS-OUTPUT-RECORD could lead to inaccurate results. It is essential to check data types, lengths, and structures for compatibility before using MOVE CORRESPONDING.
